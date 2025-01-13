@@ -82,14 +82,14 @@ int main ( void )
    /* ajout des cas de test dans la suite de test */
    if ( (NULL == CU_add_test(pSuite, "Cas de test - maximum avec arguments du même signe", test_maximum_meme_signe)) ||
         (NULL == CU_add_test(pSuite, "Cas de test - maximum avec arguments de signes opposés", test_maximum_signes_opposes)) ||
-        (NULL == CU_add_test(pSuite, "Cas de test - maximum avec arguments égaux", test_maximum_egalite) ||
+        (NULL == CU_add_test(pSuite, "Cas de test - maximum avec arguments égaux", test_maximum_egalite)) ||
         (NULL == CU_add_test(pSuite, "Cas de test - minimum avec arguments du même signe", test_minimum_meme_signe)) ||
         (NULL == CU_add_test(pSuite, "Cas de test - minimum avec arguments de signes opposés", test_minimum_signes_opposes)) ||
-        (NULL == CU_add_test(pSuite, "Cas de test - minimum avec arguments égaux", test_minimum_egalite)||
+        (NULL == CU_add_test(pSuite, "Cas de test - minimum avec arguments égaux", test_minimum_egalite))||
         (NULL == CU_add_test(pSuite, "Cas de test - addition avec arguments du même signe", test_addition_meme_signe)) ||
-        (NULL == CU_add_test(pSuite, "Cas de test - addition avec arguments de signes opposés", test_addition_signes_opposes)) ||
+        (NULL == CU_add_test(pSuite, "Cas de test - addition avec arguments de signes opposés", test_addition_signes_opposes)) 
         )
-      )
+ 
    {;
       CU_cleanup_registry();
       return CU_get_error();
