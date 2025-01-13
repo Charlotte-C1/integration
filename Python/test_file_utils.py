@@ -27,12 +27,12 @@ class TestFileUtils(unittest.TestCase):
     def testAreSame(self):
         """Cas de test vérifiant que les fichiers sont identiques."""
         assert not file_utils.diff(self.file_first_name, self.file_first_name), "similitude non détectée"
-        assert file_utils.same(self.file_first_name, self.file_first_name), "similitude non détectée"
+        assert file_utils.same(self.file_first_name, self.file_first_name)
     
     def testAreDifferent(self):
         """Cas de test -  fichiers différents."""
         assert file_utils.diff(self.file_first_name, self.file_second_name), "différence non détectée"
-        assert not file_utils.same(self.file_first_name, self.file_second_name), "différence non détectée"
+        assert not file_utils.same(self.file_first_name, self.file_second_name)
 
     def testFirstFileNotFound(self):
         """Cas de test - premier fichier inexistant."""
