@@ -4,7 +4,11 @@
 /****************** Recherche du maximum ***********************/
 float maximum (float n1, float n2 )
 {
-   return 0;
+   float max ;
+   if (n1 > n2){
+	   max= n1;}
+   else{ max = n2;}
+   return max;
 }
 
 /****************** Recherche du minimum ***********************/
